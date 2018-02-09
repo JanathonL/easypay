@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_titlebar"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:background="#00bfff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+        <Button
+            android:id="@+id/Button_return"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:background="@null"
+            android:gravity="center_vertical|start"
+            android:text="返回"
+            android:textAlignment="viewStart"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintLeft_creator="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/layout_titlebar"
+        app:layout_constraintRight_toRightOf="@+id/layout_titlebar"
+        app:layout_constraintTop_toBottomOf="@+id/layout_titlebar">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_address1"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/address_background_default"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_titlebar"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1">
+
+            <TextView
+                android:id="@+id/text_number1"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="54sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_goodsname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:paddingTop="0dp"
+
+                android:text="浙江大学玉泉校区30舍"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/text_number1"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/text_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="张小华"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_goodsname1"
+                app:layout_constraintTop_toBottomOf="@+id/text_goodsname1" />
+
+            <TextView
+                android:id="@+id/text_phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="17816855161"
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_name1"
+                app:layout_constraintTop_toBottomOf="@+id/text_name1" />
+
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/address_background_unused"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_titlebar"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1">
+
+            <TextView
+                android:id="@+id/text_number2"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="54sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_goodsname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:paddingTop="0dp"
+
+                android:text="杭州市花柳街"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/text_number2"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/text_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="武鸣"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_goodsname2"
+                app:layout_constraintTop_toBottomOf="@+id/text_goodsname2"
+                android:layout_marginLeft="0dp" />
+
+            <TextView
+                android:id="@+id/text_phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="17512345561"
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_name2"
+                app:layout_constraintTop_toBottomOf="@+id/text_name2" />
+
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_address3"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/address_background_unused"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_titlebar"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1">
+
+            <TextView
+                android:id="@+id/text_number3"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="54sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_goodsname3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:paddingTop="0dp"
+
+                android:text="西湖区32号"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/text_number3"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/text_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="张明"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_goodsname3"
+                app:layout_constraintTop_toBottomOf="@+id/text_goodsname3"
+                android:layout_marginLeft="0dp" />
+
+            <TextView
+                android:id="@+id/text_phone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="178****5561"
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_name3"
+                app:layout_constraintTop_toBottomOf="@+id/text_name3" />
+
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_address4"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/address_background_unused"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_titlebar"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1">
+
+            3<TextView
+            android:id="@+id/text_number4"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="none"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="54sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_goodsname4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="none"
+                android:paddingTop="0dp"
+
+                android:text="西湖区32号"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/text_number4"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/text_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="张明"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_goodsname4"
+                app:layout_constraintTop_toBottomOf="@+id/text_goodsname4"
+                android:layout_marginLeft="0dp" />
+
+            <TextView
+                android:id="@+id/text_phone4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="0dp"
+                android:text="178****5561"
+                android:textColor="@android:color/background_light"
+                android:textSize="10sp"
+                app:layout_constraintLeft_toLeftOf="@+id/text_name4"
+                app:layout_constraintTop_toBottomOf="@+id/text_name4" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_buttonsbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/button_mainpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_mainpage" />
+
+        <Button
+            android:id="@+id/button_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_pay" />
+
+        <Button
+            android:id="@+id/button_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_my" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

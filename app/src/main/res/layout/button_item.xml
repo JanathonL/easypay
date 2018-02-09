@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_address1"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background_bankcard">
+
+        <TextView
+            android:id="@+id/text_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17816855145"
+            android:textColor="#fff"
+            android:textSize="8sp"
+            app:layout_constraintLeft_toLeftOf="@+id/text_name1"
+            app:layout_constraintTop_toBottomOf="@+id/text_name1" />
+
+        <TextView
+            android:id="@+id/text_goods_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="X1"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/text_price1"
+            app:layout_constraintTop_toBottomOf="@+id/text_price1" />
+
+        <TextView
+            android:id="@+id/text_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:text="￥20.00"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_goodsname1" />
+
+        <TextView
+            android:id="@+id/text_address1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="浙江大学玉泉校区"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/text_goodsname1"
+            app:layout_constraintTop_toBottomOf="@+id/text_goodsname1" />
+
+        <TextView
+            android:id="@+id/text_button_number1"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="none"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="54sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_goodsname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="none"
+            android:paddingTop="0dp"
+
+            android:text="浙江移动手机话费充值20元 快充直充24小时中国移动官方旗舰店"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/text_button_number1"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/text_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingTop="0dp"
+            android:text="收货人"
+            android:textColor="#fff"
+            android:textSize="8sp"
+            app:layout_constraintLeft_toLeftOf="@+id/text_address1"
+            app:layout_constraintTop_toBottomOf="@+id/text_address1" />
+    </android.support.constraint.ConstraintLayout>
+
